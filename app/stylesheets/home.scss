@@ -1,0 +1,110 @@
+.home {
+  position: relative;
+  height: 100vh;
+  padding: 0 !important;
+}
+
+.home-text {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+@media
+  (max-width: 22.5em) and (max-height: 22.5em),
+  (min-width: 22.5em) and (max-width: 30em) and (max-height: 33.5em),
+  (min-width: 30em) and (max-width: 50em) and (max-height: 58em),
+  (min-width: 50em) {
+  .home-text {
+    top: 0;
+    bottom: 0;
+    transform: none;
+  }
+}
+
+.home-title {
+  margin-left: 1.1rem;
+  margin-bottom: 1.667em;
+  height: 7em;
+  background: url(../images/title.svg) 0 50% no-repeat;
+  background-size: 8.331em 7em;
+  text-indent: -10000px;
+  overflow: hidden;
+  font-size: 1em;
+}
+
+@media
+  (max-width: 22.5em) and (max-height: 22.5em),
+  (min-width: 22.5em) and (max-width: 30em) and (max-height: 33.5em),
+  (min-width: 30em) and (max-width: 50em) and (max-height: 58em),
+  (min-width: 50em) {
+  .home-title {
+    position: absolute;
+    top: 20vh;
+    left: 50%;
+    margin-left: 0;
+    width: 8.331em;
+    background-image: url(../images/title_center.svg);
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: 45em) {
+  .home-title {
+    width: 11.901em;
+    height: 10em;
+    background-size: 11.901em 10em;
+  }
+}
+
+.home-hero {
+  height: 66.717vw;
+  background: url(../images/hero.jpg) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+@media
+  (max-width: 22.5em) and (max-height: 22.5em),
+  (min-width: 22.5em) and (max-width: 30em) and (max-height: 33.5em),
+  (min-width: 30em) and (max-width: 50em) and (max-height: 58em),
+  (min-width: 50em) {
+  .home-hero {
+    height: 100vh;
+  }
+}
+
+.home-info {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 10%;
+  font-family: 'source-han-serif-korean', 'Noto Serif CJK KR', serif;
+  text-align: center;
+  text-shadow: 0 0 3px rgba(255,255,255,.75);
+
+  hr {
+    display: inline-block;
+    margin: 0 0 .25rem;
+    width: 1.75rem;
+    height: 5px;
+    background: #fff;
+    border: 0;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #666;
+  }
+}
+
+@media
+  (max-width: 22.5em) and (min-height: 22.5em) and (max-height: 30em),
+  (min-width: 22.5em) and (max-width: 30em) and (min-height: 33.5em) and (max-height: 38em),
+  (min-width: 30em) and (max-width: 50em) and (min-height: 58em) and (max-height: 65em),
+  (min-width: 50em) {
+  .home-info {
+    bottom: 5%;
+  }
+}

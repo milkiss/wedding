@@ -1,0 +1,113 @@
+.direction {
+  margin: 0 auto;
+  max-width: 40rem;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: .875rem;
+  color: #444;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.direction-header {
+  height: 2.875rem;
+
+  h2 {
+    float: left;
+    margin: 1.125rem 0 0;
+    padding: 0 1.1rem;
+    font-size: 1em;
+    color: #444;
+  }
+}
+
+.direction-map-wrapper {
+  margin: 0;
+  text-align: center;
+  background: #f0f0f0;
+}
+.direction-map {
+  width: 100%;
+  max-height: 70vh;
+}
+
+.direction-webmap {
+  margin: 0 -1.1rem;
+
+  .icon {
+    display: inline-block;
+    vertical-align: -.1rem;
+    margin-right: .375rem;
+    width: 20px;
+    height: 20px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+  }
+
+  .icon-naver-map { background-image: url(../images/naver-map.png); }
+  .icon-kakao-map { background-image: url(../images/kakao-map.png); }
+}
+
+.direction-link {
+  display: inline-block;
+  padding: .8rem 0;
+  width: 50%;
+  color: #444;
+  text-align: center;
+  border-bottom: 1px solid #dadada;
+
+  &:hover {
+    background: #f0f0f0;
+  }
+
+  &:first-child::after {
+    content: '';
+    float: right;
+    margin-top: .1rem;
+    width: 1px;
+    height: 1rem;
+    background: #dadada;
+  }
+}
+
+.direction-article {
+  padding: 0 1.1rem 1.125rem;
+  margin-bottom: 2rem;
+
+  .material-icons { color: #64BE99; vertical-align: top; }
+
+  .text-block {
+    display: inline-block;
+  }
+
+  h3 {
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    font-size: 1em;
+  }
+
+  dl {
+    clear: both;
+    margin: 0 0 .2rem;
+
+    &::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+
+    dt {
+      float: left;
+      width: 2.5em;
+
+      &.blue { color: #1841CF; }
+      &.green { color: #2BCE1C; }
+      &.red { color: #E61414; }
+    }
+
+    dd {
+      margin-left: 2.5em;
+    }
+  }
+}
